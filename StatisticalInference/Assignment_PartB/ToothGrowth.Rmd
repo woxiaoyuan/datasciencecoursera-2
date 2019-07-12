@@ -94,7 +94,8 @@ t.test(supp_vc$len, supp_oj$len, var.equal = FALSE)
 
 ## Alternative Hypothesis 2: Dose level has an effect on tooth length
 
-The alternative hypothesis that the dose level has an effect on tooth length. The t-test is set to compare supplement each dose level. Three dosage levels are present, which results in a total of three t-tests to compare each dosage:
+The alternative hypothesis that the dose level has an effect on tooth length. The t-test is set to compare supplement each
+dose level. Three dosage levels are present, which results in a total of three t-tests to compare each dosage:
 
 1. Dose level 0.5 to 1.0
 2. Dose level 0.5 to 2.0
@@ -111,7 +112,8 @@ dose_2.0 <- subset(tg, dose==2.0)
 
 ### Compare Dose Level 0.5 to 1.0
 
-The first t-test concludes the 95% confidence interval is greater than zero indicating the null hypothesis that dose level has no effect can be rejected. Therefore, a dose level of 1.0 has a positive effect on tooth length versus a dose level of 0.5.
+The first t-test concludes the 95% confidence interval is greater than zero indicating the null hypothesis that dose level has
+no effect can be rejected. Therefore, a dose level of 1.0 has a positive effect on tooth length versus a dose level of 0.5.
 
 ``` {r doseCompare_0.5_1.0}
 # Compare dose level 0.5 to 1.0
@@ -120,7 +122,9 @@ t.test(dose_1.0$len, dose_0.5$len, var.equal = FALSE)
 
 ### Compare Dose Level 0.5 to 2.0
 
-The second t-test concludes the 95% confidence interval is greater than zero indicating the null hypothesis that dose level has no effect can be rejected. Therefore, a dose level of 2.0 has a positive effect on tooth length versus a dose level of 0.5.
+The second t-test concludes the 95% confidence interval is greater than zero indicating the null hypothesis that dose level
+has no effect can be rejected. Therefore, a dose level of 2.0 has a positive effect on tooth length versus a dose level of 
+0.5.
 
 ``` {r doseCompare_0.5_2.0}
 # Compare dose level 0.5 to 2.0
@@ -131,7 +135,8 @@ t.test(dose_2.0$len, dose_0.5$len, var.equal = FALSE)
 
 ### Compare Dose Level 1.0 to 2.0
 
-The third t-test concludes the 95% confidence interval is greater than zero indicating the null hypothesis that dose level has no effect can be rejected. Therefore, a dose level of 2.0 has a positive effect on tooth length versus a dose level of 1.0.
+The third t-test concludes the 95% confidence interval is greater than zero indicating the null hypothesis that dose level has
+no effect can be rejected. Therefore, a dose level of 2.0 has a positive effect on tooth length versus a dose level of 1.0.
 
 ``` {r doseCompare_1.0_2.0}
 # Compare dose level 1.0 to 2.0
@@ -141,4 +146,5 @@ t.test(dose_2.0$len, dose_1.0$len, var.equal = FALSE)
 # Conclusions
 
 1. Supplement type was not proven with 95% confidence to have an effect on tooth length. 
-2. Dose level was proven with 95% confidence to have an effect on tooth length. All three comparisons of dose level concluded that tooth length increased with increasing dose level.
+2. Dose level was proven with 95% confidence to have an effect on tooth length. All three comparisons of dose level concluded 
+that tooth length increased with increasing dose level.
