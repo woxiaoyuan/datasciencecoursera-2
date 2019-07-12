@@ -1,17 +1,14 @@
 ---
 title: "Exploration of Tooth Growth Data"
-author: "Matt Dancho"
-date: "June 9, 2016"
-output: pdf_document
+author: "woxiaoyuan"
+
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 # Overview
 
-This report analyzes the effect of Vitamin C on tooth growth in guinea pigs. The data used comes from the `ToothGrowth` data set in the `R datasets` package. Each animal received one of three dose levels of vitamin C (0.5, 1, and 2 mg/day) by one of two delivery methods, orange juice (OJ) or ascorbic acid, a form of vitamin C (VC). The response is the length of odontoblasts (cells responsible for tooth growth) in 60 guinea pigs. The analysis contains an exploratory evaluation and a statistical analysis of the effect of supplement and dose level on tooth growth.
+1. Load the ToothGrowth data and perform some basic exploratory data analyses
+2. Provide a basic summary of the data.
+3. Use confidence intervals and/or hypothesis tests to compare tooth growth by supp and dose. (Only use the techniques from  class, even if there's other approaches worth considering)
+4. State your conclusions and the assumptions needed for your conclusions.
 
 # Setup
 
